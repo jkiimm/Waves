@@ -36,7 +36,7 @@
 
     </head>
     <body>
-        <div id="bg-pattern" class="bg-pattern waves-effect waves-block waves-light"></div>
+        <div id="bg-pattern" class="bg-pattern waves-effect waves-block"></div>
 
         <div id="navigation" class="shadow">
             <a href="#examples">Examples</a>
@@ -206,10 +206,17 @@
             $(document).on('ready', function() {
 
                 // Init Waves
-                Waves.init();
                 Waves.attach('.drag-ripple', 'waves-block', true);
-                Waves.attach('#bg-pattern', null, true);
-                
+                Waves.attach('#bg-pattern');
+
+                setInterval(() => {
+                  Waves.ripple('#bg-pattern', {
+                    color: 'green',
+                    position: { x: 10, y: 10 },
+                    scaleRatio: 2,
+                    translate: { x: 10, y: 10 }
+                  });
+                }, 1000)
 
                 init();
 

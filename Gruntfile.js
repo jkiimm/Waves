@@ -91,19 +91,6 @@ module.exports = function(grunt) {
             }
 		},
 
-        'sass-convert': {
-            options: {
-                from: 'scss',
-                to: 'sass',
-                indent: 2
-            },
-            files: {
-                cwd: 'src/scss',
-                src: '*.scss',
-                dest: 'src/sass'
-            }
-        },
-        
         sass: {
             test: {
                 files: [{
@@ -229,7 +216,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-stylus');
-    grunt.loadNpmTasks('grunt-sass-convert');
     grunt.loadNpmTasks('grunt-contrib-clean');
     
     // Create grunt task
@@ -241,7 +227,6 @@ module.exports = function(grunt) {
         'copy', 
         'execute:less2stylus', 
         'execute:less2scss', 
-        'sass-convert', 
         'sass:test', 
         'stylus:test', 
         'less:test', 
