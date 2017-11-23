@@ -1,10 +1,9 @@
 {
   "name": "Waves",
-  "homepage": "http://fian.my.id/Waves",
   "authors": [
-    "Alfiana E. Sibuea <alfian.sibuea@gmail.com>"
+    "Jinyoung Kim"
   ],
-  "description": "Click effect inspired by Google's Material Design",
+  "description": "Ripple effect inspired by Google's Material Design",
   "main": ["dist/waves.js", "dist/waves.css"],
   "keywords": [
     "click",

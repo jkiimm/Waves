@@ -1,8 +1,11 @@
 {
   "name": "node-waves",
-  "version": "0.7.5",
-  "description": "Click effect insipired by Google Material Design",
-  "author": "Alfiana E. Sibuea <alfian.sibuea@gmail.com>",
+  "version": "1.0.0",
+  "description": "Ripple effect insipired by Google Material Design",
+  "author": {
+    "name": "Jinyoung Kim",
+    "email": "jkiimm9@gmail.com"
+  },
   "license": "MIT",
   "main": "src/js/waves.js",
   "types": "src/typings/waves.d.ts",
@@ -24,10 +27,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fians/Waves.git"
+    "url": "https://github.com/jkiimm/Waves.git"
   },
   "bugs": {
-    "url": "https://github.com/fians/Waves/issues"
-  },
-  "homepage": "http://fian.my.id/Waves"
+    "url": "https://github.com/jkiimm/Waves/issues"
+  }
 }
