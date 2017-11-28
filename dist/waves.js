@@ -347,7 +347,7 @@
         options.position = options.position || null; // default = centre of element
         options.color = options.color || 'black';
         options.translate = options.translate || { x: 0, y: 0 };
-        options.scaleRatio = options.scaleRatio || 1;
+        options.scaleRatio = typeof options.scaleRatio === 'undefined' ? 1 : options.scaleRatio;
 
         if (elementsLen) {
             var element, pos, off, centre = {}, i = 0;
